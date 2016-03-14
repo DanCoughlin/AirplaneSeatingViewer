@@ -31,18 +31,19 @@ public class AirplaneSeatingFrame extends JFrame {
         setSize(FRAME_WIDTH, FRAME_HEIGHT);
     }
     
+    // TODO create an inner class that updates 
+    // the label when find seats is clicked
+    
     private void createComponents() {
-        // TODO create a buton "Find Seats"
+        button = new JButton("Find Seats");
+        // TODO create an instance of the listener (innner) class
         
-        // TODO create a label "Airplane Seating"
+        // TODO add the listener class to the source
         
-        // TODO create a panel to act as container 
-        // to hold button, and label components
-        
-        // TODO add button to panel
-        
-        // TODO add label to panel
-        
-        // TODO add panel to frame
+        label = new JLabel("Airplane Seating");
+        JPanel panel = new JPanel();
+        panel.add(button);
+        panel.add(label);
+        add(panel);
     }
 }
