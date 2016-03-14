@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package airplaneseatingviewer;
+import javax.swing.JFrame;
 
 /**
  *
@@ -16,6 +17,10 @@ public class AirplaneSeatingViewer {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        JFrame frame = new AirplaneSeatingFrame();
+        frame.setTitle("Title for Airplane Seating");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setVisible(true);
     }
     
 }
